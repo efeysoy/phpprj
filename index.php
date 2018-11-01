@@ -20,7 +20,7 @@ require 'core/app.php';
 
 require 'vendor/autoload.php';
 
-require 'LoadCore.php';
+ #require 'LoadCore.php';
 
 $app = new Init;
 

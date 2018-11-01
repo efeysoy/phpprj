@@ -18,7 +18,7 @@ class IndexController {
     public function index()
 
     {
-
+        return Init::view('index');
         return "Index Method";
 
     }
@@ -35,6 +35,13 @@ class IndexController {
 
         print_r($this->model->getUsers());
 
+    }
+
+    public function data(){
+        Init::view('main/data', array(
+            'posts' => ['post1','post2'],
+            'comments' => ['comment1','comment2']
+        ));
     }
 
 }

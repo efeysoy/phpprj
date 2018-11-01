@@ -91,7 +91,7 @@ class Init {
     public static function view($template_name, $data = array())
     {
 
-        $loader = new Twig_Loader_Filesystem('views');
+        $loader = new Twig_Loader_Filesystem('Views');
 
         $twig = new Twig_Environment($loader);
 
